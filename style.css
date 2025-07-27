@@ -269,9 +269,35 @@ html {
 .features .one-click .right{
     width: 50%;
     padding: 10px;
+    text-align: left;
 }
 
 .features .one-click .left img{
     width: 500px;
     height: auto;
+}
+
+.features .one-click .right h1{
+    text-align: left;
+    font-size: 2.1em;
+    margin-bottom: 25px;
+}
+
+.features .one-click .right p{
+    font-size: 18px;
+    color: #1b1b1bc0;
+    line-height: 25px;
+}
+
+.features .one-click .right button{
+    padding: 10px 15px;
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    background-color: hsl(231, 69%, 60%);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
