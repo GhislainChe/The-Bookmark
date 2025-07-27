@@ -334,8 +334,10 @@ html {
     max-width: 800px;
     margin: 0 auto;
     padding: 30px 30px;
+    height: fit-content;
     display: flex;
     gap: 30px;
+    /* background-color: red; */
 }
 
 .extensions .tabs .browser{
@@ -347,10 +349,17 @@ html {
     justify-content: center;
     gap: 5px;
     padding: 15px;
-    background-color: #fff;
-    box-shadow: 8px 8px 20px #b8b8b859;
-    /* height: fit-content; */
+    background: linear-gradient(to bottom, #f4f4f4, #fff);
+    box-shadow: 3px 14px 20px #b8b8b841;
+    height: fit-content;
     border-radius: 12px;
+}
+
+.extensions .tabs .browser:nth-child(2){
+    margin-top: 35px;
+}
+.extensions .tabs .browser:nth-child(3){
+    margin-top: 70px;
 }
 
 .extensions .tabs .browser .img1{
@@ -384,4 +393,11 @@ html {
     color: #fff;
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.extensions .tabs .browser button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(231, 69%, 60%);
+    color: hsl(231, 69%, 60%);
 }
