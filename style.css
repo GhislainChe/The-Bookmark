@@ -181,8 +181,9 @@ html {
 }
 
 .hero .hero-content .context .left .buttons button:hover {
-  border: 1px solid hsl(231, 69%, 60%);
-  color: hsl(231, 69%, 60%);
+  background-color: hsl(231, 69%, 60%);
+  border: none;
+  color: hsl(0, 0%, 100%);
 }
 
 .hero .hero-content .context .right {
@@ -587,5 +588,42 @@ footer .last .last-nav .LNR {
 }
 
 @media (max-width: 750px) {
+  .hero {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(55, 215, 236); */
+  }
+
+  .hero .hero-content .context {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    /* color: white; */
+    margin: 0 auto;
+    /* background-color: #ceb9b9; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+  }
+
+  .hero .hero-content .context .left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hero .hero-content .context .left h1 {
+    text-align: center;
+  }
+
+  .hero .hero-content .context .left p {
+    text-align: center;
+  }
+
   
 }
