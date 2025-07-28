@@ -10,6 +10,7 @@ body {
   font-family: "Rubik", sans-serif;
   background-color: #f4f4f4;
   width: 100%;
+  position: relative;
   /* overflow-y: hidden; */
 }
 html {
@@ -41,6 +42,7 @@ html {
   gap: 8px;
   /* font-size: 24px; */
   color: white;
+  z-index: 11;
 }
 
 .hero .navbar .logo i {
@@ -558,7 +560,7 @@ footer .last .last-nav .LNL i {
 
 footer .last .last-nav .LNL h1 {
   font-size: 18px;
-  color: #000;
+  color: #ffffff;
   font-weight: 600;
   text-transform: uppercase;
   user-select: none;
@@ -589,7 +591,75 @@ footer .last .last-nav .LNR {
   cursor: pointer;
 }
 
+.menu{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #0a1d70c5;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 10px;
+  display: none;
+}
+
+.menu ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 30px; */
+  list-style: none;
+  border-top: 1px solid #fff;
+  width: 100%;
+}
+
+.menu ul li{
+  padding: 20px 0;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.menu button{
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #fff;
+  background: transparent;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+#open{
+  z-index: 11;
+  color: #ffffff;
+  font-size: 20px;
+  display: none;
+}
+
 @media (max-width: 750px) {
+  #links{
+    display: none;
+  }
+
+  #login{
+    display: none;
+  }
+
+  #open{
+    display: inline-block;
+  }
+
   .hero {
     width: 100%;
     height: 100%;
