@@ -144,11 +144,11 @@ html {
 }
 
 .hero .hero-content .context .left{
-    width: 50%;
+    width: 100%;
 }
 
 .hero .hero-content .context .left h1 {
-  font-size: 3.2em;
+  font-size: 3em;
   font-weight: 500;
   color: #000;
   text-align: left;
@@ -186,7 +186,7 @@ html {
 }
 
 .hero .hero-content .context .right{
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,13 +195,14 @@ html {
 .hero .hero-content .context .right img{
   width: 100%;
   max-width: 700px;
+  min-width: 300px;
   height: auto;
 }
 
 .features {
   width: 100%;
   max-width: 1200px;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0 auto;
   padding: 20px 20px;
   display: flex;
@@ -273,7 +274,8 @@ html {
 }
 
 .features .one-click .left img{
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
@@ -304,7 +306,7 @@ html {
 
 .extensions{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 70px 20px;
     display: flex;
     flex-direction: column;
@@ -413,6 +415,9 @@ html {
     max-width: 700px;
     margin: 0 auto;
     padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .faqs-info .faqs h1{
@@ -439,6 +444,7 @@ html {
 
 .faqs-info .faqs div:nth-child(6){
   border-bottom: 1px solid rgb(24, 24, 24, 0.308);
+  margin-bottom: 30px;
 }
 
 .faqs-info .faqs div p{
@@ -452,5 +458,132 @@ html {
   outline: none;
   background-color: rgb(39, 79, 255);
   border-radius: 3px;
-  margin-top: 15px;
+  margin-top: 55px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+footer{
+  background-color: rgb(39, 79, 255);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .foot-info{
+  padding: 30px 0;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+footer .foot-info p{
+  color: #fff;
+  letter-spacing: 5px;
+  font-family: monospace;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 20px;
+}
+
+footer .foot-info h2{
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+
+
+footer .foot-info div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+footer .foot-info div input{
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+footer .foot-info div button{
+  padding: 9px 20px;
+  border: 0;
+  border-radius: 3px;
+  outline: none;
+  font-size: .4em;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  font-weight: 500;
+}
+
+footer .last{
+  width: 100%;
+  background-color: #0a1d70;
+}
+
+footer .last .last-nav{
+  max-width: 1000Px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+footer .last .last-nav .LNL{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+footer .last .last-nav .LNL .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+footer .last .last-nav .LNL i{
+  font-size: 16px;
+  color: #fff;
+}
+
+footer .last .last-nav .LNL h1{
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+footer .last .last-nav .LNL .last-links ul{
+  display: flex;
+  /* position: relative; */
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 3px 0;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+footer .last .last-nav .LNR{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
 }
