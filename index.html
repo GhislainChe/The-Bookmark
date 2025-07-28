@@ -13,9 +13,9 @@
   <body>
     <div class="menu" id="menu">
       <ul>
-        <li>features</li>
-        <li>pricing</li>
-        <li>Contact</li>
+        <li><a id="alli" href="#features">features</a></li>
+        <li><a id="alli" href="#pricing">Download</a></li>
+        <li><a id="alli" href="#faqs">faqs</a></li>
       </ul>
       <button>Login</button>
     </div>
@@ -24,13 +24,13 @@
         <div class="navbar">
           <div class="logo">
             <i class="fa-solid fa-bookmark"></i>
-            <h1>Bookmark</h1>
+            <h1 id="logo">Bookmark</h1>
           </div>
           <div class="links" id="links">
             <ul>
-              <li>features</li>
-              <li>pricing</li>
-              <li>contact</li>
+              <li><a href="#features">features</a></li>
+              <li><a href="#pricing">Download</a></li>
+              <li><a href="#faqs">faqs</a></li>
             </ul>
             <button id="login">Login</button>
           </div>
@@ -59,7 +59,7 @@
           </div>
         </div>
       </div>
-      <div class="features">
+      <div class="features" id="features">
         <h1>Features</h1>
         <div class="para">
           <p>
@@ -90,7 +90,7 @@
           </div>
         </div>
       </div>
-      <div class="extensions">
+      <div class="extensions" id="pricing">
         <h1>Download The Extensions</h1>
         <div class="para">
           We've got morebrowsers in the pipeline. Please do let us know if
@@ -120,7 +120,7 @@
           </div>
         </div>
       </div>
-      <div class="faqs-info">
+      <div class="faqs-info" id="faqs">
         <div class="faqs">
           <h1>Frequently Asked Questions</h1>
           <p id="pares">Here are some of our faqs if you have any other questions you'de like answered, please feel free to email us.</p>
@@ -150,9 +150,9 @@
               </div>
               <div class="last-links">
                 <ul>
-                  <li>features</li>
-                  <li>pricing</li>
-                  <li>contact</li>
+                  <li><a href="#features">features</a></li>
+                  <li><a href="#pricing">Download</a></li>
+                  <li><a href="#faqs">faqs</a></li>
                 </ul>
               </div>
             </div>
@@ -164,7 +164,38 @@
         </div>
       </footer>
       <script>
+        let menu = document.getElementById('menu');
+        let opene = document.getElementById('open');
+        let logo = document.getElementById('logo')
+        let alli = document.getElementById('alli')
+        opene.addEventListener('click', function () {
+          if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+            opene.classList.remove('fa-xmark');
+            opene.classList.add('fa-bars');
+            opene.style.color = 'rgb(39, 79, 255)'
+            logo.style.color = '#000'
+          } 
+          else {
+            menu.style.display = 'block';
+            opene.classList.remove('fa-bars');
+            opene.classList.add('fa-xmark');
+            opene.style.color = '#fff'
+            logo.style.color = '#fff'
+          }
         
+          opene.style.zIndex = '100';
+        });
+        
+        document.querySelectorAll('#menu a').forEach(link => {
+          link.addEventListener('click', () => {
+            menu.style.display = 'none';
+            opene.classList.remove('fa-xmark');
+            opene.classList.add('fa-bars');
+            opene.style.color = 'rgb(39, 79, 255)'
+            logo.style.color = '#000'
+          });
+        });
       </script>
   </body>
 </html>

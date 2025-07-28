@@ -10,12 +10,19 @@ body {
   font-family: "Rubik", sans-serif;
   background-color: #f4f4f4;
   width: 100%;
+  /* height: 100%; */
   position: relative;
-  /* overflow-y: hidden; */
+  /* overflow: hidden; */
 }
+
 html {
   scroll-behavior: smooth;
 }
+
+a{
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -592,7 +599,7 @@ footer .last .last-nav .LNR {
 }
 
 .menu{
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background-color: #0a1d70c5;
@@ -628,6 +635,11 @@ footer .last .last-nav .LNR {
   text-transform: uppercase;
 }
 
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
 .menu button{
   width: 100%;
   padding: 15px;
@@ -642,7 +654,7 @@ footer .last .last-nav .LNR {
 
 #open{
   z-index: 11;
-  color: #ffffff;
+  color: rgb(39, 79, 255);
   font-size: 20px;
   display: none;
 }
@@ -798,6 +810,11 @@ footer .last .last-nav .LNR {
     display: flex;
     flex-direction: column;
   }
+
+   footer .last .last-nav .LNL .last-links ul li a{
+    text-decoration: none;
+    color: #fff;
+   }
 
   footer .last .last-nav {
     display: flex;
